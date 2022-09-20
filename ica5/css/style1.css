@@ -9,6 +9,12 @@ html {
 body {
   margin: 0;
   background: #ccc;
+  background-image: url("../img/top-image.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 article {
@@ -38,14 +44,6 @@ h1 {
   text-shadow: 1px 1px 1px black;
 }
 
-h1{
-  background-image: url("./img/top-image.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-
-  background-position: top; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  text-shadow: 
-}
 
 /* Your CSS below here */
+
