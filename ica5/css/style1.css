@@ -6,15 +6,18 @@ html {
   font-family: sans-serif;
 }
 
+
 body {
   margin: 0;
-  background: #ccc;
-  background-image: url("../img/top-image.png"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background: rgb(255, 255, 255);
+  border: solid, darkred, 2px;
+  background-image: linear-gradient(grey,white, grey);
+  background-image: url("../img/bottom-image.png"),url("../img/top-image.png"); /* The image used */
+  /*background-color: #cccccc; /* Used if the image is unavailable */
 
-  background-position: top; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: bottom, top; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: contain, contain; /* Resize the background image to cover the entire container */
 }
 
 article {
@@ -28,6 +31,7 @@ address {
   position: absolute;
   bottom: 8mm;
   right: 20mm;
+
 }
 
 h1 {
@@ -41,7 +45,11 @@ h1 {
   text-align: center;
   padding: 44px 0;
   color: white;
+
   text-shadow: 1px 1px 1px black;
+  
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
 }
 
 
