@@ -9,9 +9,9 @@ html {
 
 body {
   margin: 0;
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
   border: solid, darkred, 2px;
-  background-image: linear-gradient(grey,white, grey);
+  background-image: linear-gradient(red, yellow);
   background-image: url("../img/bottom-image.png"),url("../img/top-image.png"); /* The image used */
   /*background-color: #cccccc; /* Used if the image is unavailable */
 
@@ -48,7 +48,7 @@ h1 {
 
   text-shadow: 1px 1px 1px black;
   
-  background-image: url("logo.png");
+  background: url("../img/logo.png");
   background-repeat: no-repeat;
 }
 
