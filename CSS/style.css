@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    /* background: rgb(255, 255, 255); */
+    border: solid, black, 2px;
+   
+    background-color: #000B49;
+  }
+
+  h1 {
+    color: #9B0000;
+  }
