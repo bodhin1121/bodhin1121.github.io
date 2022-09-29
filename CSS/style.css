@@ -8,15 +8,36 @@
     margin-right: auto;
     width: 50%;
 }
+nav {
+  background-color: #000;
+  padding: .5em;
+  top: 0;
+  position: sticky;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 head{
     text-align: center;
 }
 
-a:hover {
-    color: #EEBC1D;
-  }
-  body {
+nav a {
+  color: #fff;
+  text-decoration: none;
+
+  link {color: #FFFFFF;} 
+  visited {color: #060235;}  
+  hover {color: #EEBC1D;}  
+  active {color: #C0F0FC;}
+}
+
+body {
 
     font-family: articulat-cf, sans-serif;
     font-weight: 400;
@@ -33,7 +54,7 @@ a:hover {
     padding-left: 10px;
   }
 
-  h1 {
+h1 {
     color: #9B0000;
 
     font-family: articulat-cf, sans-serif;
