@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 1;
+    padding: 1;
   }
   
 #headshot{
@@ -9,13 +11,12 @@ height:255.9375px;
 
 .grid {
   margin: 0 auto;
-  padding: 0 20px;
   max-width: 980px;
   display: flex;
-  gap: 20;
   flex-wrap: wrap;
   width:375px;
-  height:250px
+  height:250px;
+  flex-direction: column; 
 }
 
 .center {
@@ -27,22 +28,6 @@ height:255.9375px;
 .center1 {
   display:flex;
   justify-content: center;
-}
-
-.row{
-  justify-content: space-evenly;
-  align-content: flex-start;
-  width: 100%;
-}
-
-.col1{
-  flex-basis: 50%;
-  position:relative;
-}
-
-.col2{
-  flex-basis: 50%;
-  position: relative;
 }
 
 nav {
@@ -99,45 +84,44 @@ a:hover {
 }
 
 body {
-
-    font-family: articulat-cf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    border: solid,  #9B0000 , 10px;
-    color: #9B0000;
-  }
+  font-family: articulat-cf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  border: solid,  #9B0000 , 10px;
+  color: #9B0000;
+}
 
 h1 {
-    color: #9B0000;
+  color: #9B0000;
 
-    font-family: articulat-cf, sans-serif;
+  font-family: articulat-cf, sans-serif;
 
-    font-weight: 250;
+  font-weight: 250;
     
-    font-style: normal;
-  }
+  font-style: normal;
+}
 
-  h2 {
-    color: #9B0000;
+h2 {
+  color: #9B0000;
 
-    font-family: articulat-cf, sans-serif;
+  font-family: articulat-cf, sans-serif;
 
-    font-weight: 200;
+  font-weight: 200;
     
-    font-style: normal;
+  font-style: normal;
+}
+
+address{
+  text-align: center;
+}
+
+@media only screen and (max-width:640px){
+  h1{
+    color: black;
+  }
+  .grid{
+    flex-direction: row; 
   }
 
-  address{
-    text-align: center;
-  }
-
-  @media only screen and (max-width:640px){
-    h1{
-      color: black;
-    }
-    .grid{
-      flex-direction: column; 
-    }
-
-  }
+}
