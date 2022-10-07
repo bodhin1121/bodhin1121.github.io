@@ -4,11 +4,15 @@
     padding: 1;
   }
 
-#body_image{
+
+/* .fullbody_grid{
   float: right;
-  width: 100%;
+  width: 50%;
   height: auto;
-}
+  /* position: absolute;
+  grid-column: 2/3;
+} 
+*/
 
 /* .photography_header{
   padding-top: 2.5%;
@@ -48,9 +52,12 @@
   flex-wrap: wrap;
   width:375px;
   height:250px; 
-  flex-direction: row; 
+  flex-direction: column; 
 }
 
+.content_grid{
+  padding-left: 1%;
+}
 /* .about_page{
   background-color: white;
   background-size: cover;
@@ -58,20 +65,27 @@
   height: 100vh;
 } */
 
+#body_image{
+  /* float: right; */
+  top: 7.25%;
+  position: absolute;
+  width: 40%;
+  height: auto;
+  left: 60%;
+}
+
 .about_content{
   float: left;
   padding-left: 1%;
 }
 
-.about_image{
-  float: right;
-  width: 40%;
-  height: 80vh;
+.content_grid{
+  width: 60%;
 }
 
-.contact{
+/* .contact{
   padding-top: 5%;
-}
+} */
 
 /* .cad{
   background-color: white;
@@ -166,15 +180,6 @@ a:hover {
   padding-top: 4%;
 }
 
-/* #headshot{
-  width:100px;
-  height:100px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 1;
-  transform: translate(0, -100vh);
-} */
-
 body {
   font-family: articulat-cf, sans-serif;
   font-size: 500;
@@ -233,23 +238,42 @@ address{
     flex-direction: row;
   }
 
-  .about_content{
+  .about_grid{
     flex-direction: row; 
     /* justify-content: right; */
-    float: right;
+    float: center;
     position: absolute;
     top: 0;
-    left: 150px;
+    left: 120px;
     flex-direction: row;
   }
 
-  .about_image{
+  .content_grid{
+    width: 100%
+  }
+  .fullbody_grid{
+    padding-top: 20%;
+    flex-direction: row;
+  }
+
+  #body_image{
+    float: center;
+    width: 50%;
+    height: auto;
+    /* float: right; */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+  }
+
+  /* .about_image{
     flex-direction: row;
     float: center;
     position: absolute;
     width: 40%;
     height: 80vh;
-  }
+  } */
+
   .photography{
     display: wrap;
     justify-content: top;
@@ -261,18 +285,16 @@ address{
     position: absolute
   }
 
-  body_image{
+  .welcome{
     float: right;
     position: absolute;
     top: 0;
     left: 100px;
   }
 
-  .welcome{
-    float: right;
-    position: absolute;
-    top: 0;
-    left: 100px;
+  .cad_grid{
+    padding-top: 20%;
+    flex-direction: row;
   }
 
   img {
