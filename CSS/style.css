@@ -79,6 +79,13 @@
   padding-left: 1%;
 }
 
+#ln{
+  width:50px;
+  height:50px;
+  margin-left: 47.5%;
+}
+
+
 .content_grid{
   width: 60%;
 }
@@ -180,11 +187,6 @@ a:hover {
   padding-top: 4%;
 }
 
-.ln{
-  width:50px;
-  height:50px;
-}
-
 body {
   font-family: articulat-cf, sans-serif;
   font-size: 500;
@@ -241,6 +243,12 @@ address{
   .image_grid{
     padding-top: 20%;
     flex-direction: row;
+  }
+
+  #ln{
+    width:50px;
+    height:50px;
+    margin-right: 45%;
   }
 
   .about_grid{
