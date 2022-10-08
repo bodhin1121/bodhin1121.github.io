@@ -180,6 +180,11 @@ a:hover {
   padding-top: 4%;
 }
 
+.ln{
+  width:50px;
+  height:50px;
+}
+
 body {
   font-family: articulat-cf, sans-serif;
   font-size: 500;
