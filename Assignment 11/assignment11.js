@@ -1,7 +1,8 @@
+// window.addEventListener('onload', getQuote);
 const quoteButton = document.querySelector('.new-quote');
 quoteButton.addEventListener("click", getQuote);
 
-const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
+const endpoint = 'https://www.boredapi.com/api/activity';
 
 async function getQuote(){
     console.log('test click worked');
@@ -11,9 +12,17 @@ async function getQuote(){
     // .then(text => text.text());
     let json_response = JSON.parse(response);
     console.log(json_response);
-    console.log(json_response['message']);
+    console.log(json_response['activity']);
 
-    displayQuote(json_response['message']);
+    displayQuote(json_response['activity']);
+    
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+ console.log(bgColor);
+  
+    document.body.style.background = bgColor;
 }
 
 function displayQuote(x){

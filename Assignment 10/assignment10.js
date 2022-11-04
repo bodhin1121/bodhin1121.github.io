@@ -45,7 +45,7 @@ for(let i = 0; i < 4; i++){
     total += assignment10["employees"][i].salary;
 }
 
-console.log(assignment10);
+console.log(total);
 
 for(let i = 0; i < 4; i++){
     if(assignment10.employees[i]["raise eligible"] == true){
