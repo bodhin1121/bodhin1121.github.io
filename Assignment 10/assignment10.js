@@ -59,7 +59,7 @@ console.log(assignment10);
 for(let i = 0; i < 4; i++){
     let wfm = false;
     if(assignment10["employees"][i].name == 'Anna' || assignment10["employees"][i].name == 'Sam'){
-        wfm = true; 
+        assignment10.employees[i]["Working from home"] = true; 
     }
     else{
         assignment10.employees[i]["Working from home"] = false;
