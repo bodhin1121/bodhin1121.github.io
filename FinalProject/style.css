@@ -105,6 +105,7 @@ header{
 .el__preview-cont {
   z-index: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -386,4 +387,13 @@ header{
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+
+@media only screen and (max-width:640px){
+  .cont__inner{
+    flex-direction: column;
+  }
+  .el{
+    flex-direction: column;
+  }
 }
