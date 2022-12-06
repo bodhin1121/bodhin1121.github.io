@@ -1,0 +1,50 @@
+Bodhin Peterson-Smart
+Boulder, CO     (720)-365-3625   bodhin1121@gmail.com 
+https://www.linkedin.com/in/bodhin-peterson-smart-9833b1202/
+
+EDUCATION
+
+University of Colorado Boulder                                                                                                Expected Graduation: May 2025
+Major: Mechanical Engineering | Creative Technology and Design   
+Minor: Engineering Management | Engineering Entrepreneurship   
+Full-Ride Scholarship
+GPA: 3.4
+Bilingual - English and Spanish
+
+PROFESSIONAL EXPERIENCE
+
+Trimble Inc.                                                                                                                                                      Westminster, CO
+Test Engineer Intern (Agricultural engineering testing department)                                                                                              June 2021–August 2021
+
+Configured and repaired complex cabling setups for guidance and Global Navigation Satellite System (GNSS) testing
+Rewired test vehicles (Kubota RTV X1100C) for successfully implementing Trimble ag guidance and GNSS systems
+Built wiring harnesses from scratch and soldered new electrical wiring implementations
+Organized testing center cabinets and benches for easy hardware configuration changes
+Visited the Trimble agriculture test site in Berthoud, Colorado for hands-on work and testing
+Attended team project meetings to continually review benchmarks for project requirements
+SafeSite General Farm & Tractor Safety Trained
+
+LEADERSHIP/ VOLUNTEER WORK
+
+Broadening Opportunity through Leadership and Diversity (BOLD) Leadership member    
+Society of Hispanic Professional Engineers (SHPE)
+Global Engineering Residential Academic Program
+CU Boulder Ski and Snowboard Club
+Volunteer at the Boulder County Farmers Market for Trimble’s intern day of service
+
+TECHNICAL SKILLS/ COURSEWORK & PROJECTS
+
+Software: SolidWorks (CSWA Certified),  Autodesk Inventor (Certified),  Excel,  HTML/CSS,  Java,  C++
+
+Industrial: Fabrication (3D Printing, Laser Cutting, CNC Milling),  Technical schematics,  Soldering         
+
+Engineering Drawing Final Project: Created a reverse-engineered model of my longboard using SolidWorks with the 
+modification of an added speedometer. 3D Printed a to-scale model of the baseplate which is an essential part of the trucks.
+
+Intro to Computer Science Game Project: Developed a turn-based mortal kombat-style video game in C++ using six 
+different classes. This game had an interactive map, shop, credits, and pokemon style battles between the player and AI
+
+
+
+
+
