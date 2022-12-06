@@ -2762,6 +2762,7 @@ input, select, textarea {
 			.tiles article header {
 				position: relative;
 				z-index: 3;
+				padding-left: 150px;
 			}
 
 			.tiles article h3 {
