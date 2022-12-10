@@ -1084,7 +1084,7 @@ input, select, textarea {
 			font-weight: 600;
 		}
 
-		input[type="submit"].disabled, input[type="submit"]:disabled,
+		input[type="submit"].enabled, input[type="submit"]:enabled,
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
 		input[type="button"].disabled,
