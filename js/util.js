@@ -458,7 +458,7 @@
 						$to = 'bodhin1121@gmail.com';
 						$email_subject = 'New Contact Form Submission!';
 						
-						$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";;
+						$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";
 
 				})
 				.on('reset', function(event) {
