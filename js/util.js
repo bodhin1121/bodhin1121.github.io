@@ -454,8 +454,8 @@
 						$name = $_POST['name'];
 						$email = $_POST['email'];
 						$message = $_POST['message'];                                                   
-						$from = 'From: <email>';
-						$to = 'bodhin1121@gmail.com';
+						$from = 'From: <bodhin1121@gmail.com>';
+						$to = 'email';
 						$email_subject = 'New Contact Form Submission!';
 						
 						$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";
