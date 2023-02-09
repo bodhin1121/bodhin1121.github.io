@@ -434,31 +434,41 @@
 			$this
 				.on('submit', function() {
 
-					// $this.find('input[type=text],input[type=password],textarea')
-					// 	.each(function(event) {
+					$this.find('input[type=text],input[type=password],textarea')
+						.each(function(event) {
 
-					// 		var i = $(this);
+							var i = $(this);
 
-					// 		if (i.attr('name').match(/-polyfill-field$/))
-					// 			i.attr('name', '');
+							if (i.attr('name').match(/-polyfill-field$/))
+								i.attr('name', '');
 
-					// 		if (i.val() == i.attr('placeholder')) {
+							if (i.val() == i.attr('placeholder')) {
 
-					// 			i.removeClass('polyfill-placeholder');
-					// 			i.val('');
+								i.removeClass('polyfill-placeholder');
+								i.val('');
 
-					// 		}
+							}
 
-					// 	});
+						});
 
 						$name = $_POST['name'];
 						$email = $_POST['email'];
 						$message = $_POST['message'];                                                   
-						$from = 'From: <bodhin1121@gmail.com>';
-						$to = 'email';
+						$from = 'From: <email>';
+						$to = 'bodhin1121@gmail.com';
 						$email_subject = 'New Contact Form Submission!';
 						
 						$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";
+						// if (isset($_POST['email'])) {
+						// 	$name = $_POST['name'];
+						// 	$email = $_POST['email'];
+						// 	$message = $_POST['message'];
+						// 	$to = "recipient@example.com";
+						// 	$subject = "Website Contact Form: $name";
+						// 	$headers = "From: $email\r\n";
+						// 	$headers = "Reply-To: $email\r\n";
+						// 	mail($to, $subject, $message, $headers);
+						// }
 
 				})
 				.on('reset', function(event) {
