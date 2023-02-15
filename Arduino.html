@@ -195,15 +195,17 @@
 								<h3>Procedure:</h3>
 								<ul>
 									<li>Wire the Arduino and breadboard in conjuction with the schematic provided</li>	
-									<li>Set up the pin as a digital input by calling the function pinMode(INPUT_PIN, INPUT) in the declaration of the setup() function</li>
-									<li>Use the Blink example from Part 1 as starter code</li>
-									<li>Declare a global variable equal to 10 outside of the setup() function and the loop() functional declarations: “int LED_PIN = 10;”</li>
-									<li>Replace LED_BUILTIN everywhere with our variables name:“int LED_PIN = 10;”</li>
-									<li>Upload this code to the board by clicking on the arrow button on the toolbar</li>
-									<li>Wait for the "Done Uploading" message</li>
-									<li>Watch the LED on the external LED blink repeatedly</li>	
-
+									<li>Open a new Arduino sketch through File > New Sketch (or Ctrl+N)</li>
+									<li>In the setup() function declaration, add a function call to Serial.begin(9600)</li>
+									<li>Inside of the loop() function declaration, call Serial.println("Hello, World")</li>
+									<li>Customize this message</li>
+									<li>Set up the pin as a digital input by calling the function pinMode(INPUT_PIN, INPUT) in the declaration of the setup() function</li>	
+									<li>
+										Using the digitalRead() function (which returns HIGH or LOW), a while() loop so the aduino prints a “waiting” message to indicate that it is 
+										waiting for the button to be pressed and a “success” message as soon as the button is pressed going back to the "waiting" message after.
+									</li>	
 								</ul>
+
 								<h3>Illustration and schematic of button circuit</h3>
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Lab2_Part3.png" alt="placeholder" /></span>
 
@@ -226,6 +228,36 @@
 								</video>
 								<p></p>
 								
+								<h3>Problems Faced and Conclusion:</h3>
+								<p>Getting the code to work for this part of the lab was pretty dificult and I had to do extensive work with the TA Aarya to get it working. Also there was an issue with the Arduino IDE thowing a avrdude: stk500_recv(): programmer is not responding error when I used my USB adapter for my mac so I had to use a different USB adapter.</p>
+								
+							
+								<h3 class="major">PART 4: LED REACTION GAME</h3>
+
+								<h3>Procedure:</h3>
+
+								<ul>
+									<li>Use the same Arduino and breadboard wiring as Part 3</li>	
+									<li>Open a new Arduino sketch through File > New Sketch (or Ctrl+N)</li>
+									<li>
+										We will design an LED Reaction game, where the LED connected to the Arduino will turn on 
+										after a random time interval, and then the player will need to press the button as soon as they notice the LED. 
+									</li>
+									<li>
+										The output of this game would be the time that the player took to press the button,
+										which can serve as a score to compare with other players.
+									</li>
+									<li>In order to generate a random integer on Arduino, use the random() function</li>
+									<li>Use the randomSeed(seed); function with a seed value of your choice to ensure variation.</li>
+									<li>Use the millis() function to track time </li>
+								</ul>
+								
+								<h3>Code for LED game</h3>
+								<script src="https://gist.github.com/bodhin1121/abff495cdf6a9612c2e3749b36a26407.js"></script>
+
+								
+
+
 							</article>
 
 						<!-- cad -->
