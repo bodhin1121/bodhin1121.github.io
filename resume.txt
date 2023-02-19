@@ -1,6 +1,7 @@
 Bodhin Peterson-Smart
 Boulder, CO     (720)-365-3625   bodhin1121@gmail.com 
-https://www.linkedin.com/in/bodhin-peterson-smart-9833b1202/
+
+http://bodhinpeterson-smart.me/
 
 EDUCATION
 
@@ -8,13 +9,20 @@ University of Colorado Boulder                                                  
 Major: Mechanical Engineering | Creative Technology and Design   
 Minor: Engineering Management | Engineering Entrepreneurship   
 Full-Ride Scholarship
-GPA: 3.4
+GPA: 3.6
 Bilingual - English and Spanish
 
 PROFESSIONAL EXPERIENCE
 
+THING Lab, CU Boulder									 	       Boulder, CO
+Research Assistant									                                  January 2023–Current
+
+Transformative Human Interfaces for the Next Generation (THING) Lab–Project HECTARE, a NASA-funded project, in concert with Diamond Age Technologies.
+Programming a Boston Dynamics Spot robot dog to integrate into VR simulations to create an immersive astronaut training experience for future missions to the Moon and Mars
+Our study is investigating using haptic distractors to improve the user experience in VR-redirected walking (RDW) systems.
+
 Trimble Inc.                                                                                                                                                      Westminster, CO
-Test Engineer Intern (Agricultural engineering testing department)                                                                                              June 2021–August 2021
+Test Engineer Intern (Agricultural testing department)                                                                                                                  June 2021–August 2021
 
 Configured and repaired complex cabling setups for guidance and Global Navigation Satellite System (GNSS) testing
 Rewired test vehicles (Kubota RTV X1100C) for successfully implementing Trimble ag guidance and GNSS systems
@@ -26,7 +34,7 @@ SafeSite General Farm & Tractor Safety Trained
 
 LEADERSHIP/ VOLUNTEER WORK
 
-Broadening Opportunity through Leadership and Diversity (BOLD) Leadership member    
+Broadening Opportunity through Leadership and Diversity (BOLD) Leadership member
 Society of Hispanic Professional Engineers (SHPE)
 Global Engineering Residential Academic Program
 CU Boulder Ski and Snowboard Club
@@ -34,15 +42,29 @@ Volunteer at the Boulder County Farmers Market for Trimble’s intern day of ser
 
 TECHNICAL SKILLS/ COURSEWORK & PROJECTS
 
-Software: SolidWorks (CSWA Certified),  Autodesk Inventor (Certified),  Excel,  HTML/CSS,  Java,  C++
+Software: SolidWorks (CSWA Certified),  Autodesk Inventor (Certified),  Autodesk Revit,  Excel,  C++,  Arduino,  HTML/CSS,  Java
 
-Industrial: Fabrication (3D Printing, Laser Cutting, CNC Milling),  Technical schematics,  Soldering         
+Industrial: Fabrication (3D Printing, Laser Cutting, CNC Milling),  Technical schematics,  Soldering, UX/UI Design        
 
 Engineering Drawing Final Project: Created a reverse-engineered model of my longboard using SolidWorks with the 
 modification of an added speedometer. 3D Printed a to-scale model of the baseplate which is an essential part of the trucks.
 
 Intro to Computer Science Game Project: Developed a turn-based mortal kombat-style video game in C++ using six 
-different classes. This game had an interactive map, shop, credits, and pokemon style battles between the player and AI
+different classes. This game had an interactive map, shop, credits, and pokemon style battles between the player and AI.
+
+SparkFun Arduino Project: Programmed and wired a SparkFun Arduino to play songs and display different light sequences using a variety 
+of sensors as input to trigger the sequence. 
+
+ACHIEVEMENTS
+
+President James H. Baker Esteemed Merit Scholar (4-year renewable)
+BOLD Leadership Scholar (4-year renewable)
+CU Boulder Engineering Scholar (4-year renewable)
+Virginia T. Schuman Scholar (4-year renewable)
+Boulder Rotary Club Scholar (Single Grant)
+Boulder Valley Rotary Club Scholar (Single Grant)
+Elevations Foundation Scholar (Single Grant)
+
 
 
 
