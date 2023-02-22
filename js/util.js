@@ -454,8 +454,8 @@
 						$name = $_POST['name'];
 						$email = $_POST['email'];
 						$message = $_POST['message'];                                                   
-						$from = 'From: <email>';
-						$to = 'bodhin1121@gmail.com';
+						$from = 'From: <bodhin1121@gmail.com>';
+						$to = 'email';
 						$email_subject = 'New Contact Form Submission!';
 						
 						$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";
@@ -469,6 +469,22 @@
 						// 	$headers = "Reply-To: $email\r\n";
 						// 	mail($to, $subject, $message, $headers);
 						// }
+						if ($_SERVER["REQUEST_METHOD"] == "POST") {
+							$name = $_POST["name"];
+							$email = $_POST["email"];
+							$message = $_POST["message"];
+						
+							$to = "bodhin1121@gmail.com";
+							$subject = "Website Message from $name";
+							$headers = "From: $email\r\n";
+							$headers .= "Reply-To: $email\r\n";
+						
+							if (mail($to, $subject, $message, $headers)) {
+							  echo "Your message has been sent!";
+							} else {
+							  echo "An error occurred while trying to send your message.";
+							}
+						}
 
 				})
 				.on('reset', function(event) {
