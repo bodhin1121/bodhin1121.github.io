@@ -521,19 +521,48 @@
 									<li>Follow the code as listed below to create a sketch where no LEDs are turned on if the potentiometer is turned all the way to the left (when the value reads 0). As you slightly rotate the knob, one LED turns on. If you rotate it a little more, two LEDs turn on, and so on, until all the 5 LEDs are turned on when the potentiometer is dialed all the way to the other side</li>
 								</ul>
 
+								<h3>Linear arrangement of 5 LEDs:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2539.jpeg" alt="placeholder" /></span>
+
 								<p></p>
-								<h3>Video of LEDs lighting up in sequence</h3>
+								<h3>Video of LEDs lighting up in sequence:</h3>
 								<p></p>
 								<video controls="controls" width="100%" height="50%" name="Video Name">
 									<source src="https://bodhin1121.github.io/img/IMG_2538.mov">
 								</video>
 								<p></p>
 
-								<h3>Code for LED Sequence:</h3>
+								<h3>Code for Part 2:</h3>
 								<script src="https://gist.github.com/bodhin1121/8286a112ae76422e9cc7ebeb9c2fdc23.js"></script>
 
+
+
+								<p></p>
 								<h3 class= major>PART 3: JOYSTICK FOR ARDUINO</h3>
 
+								<h3>Procedure:</h3>
+								<ul>
+									<li>Our kit includes a rotary potentiometer with three pins, two of which are “fixed ends”, and the third is a “variable end”, which, when we rotate the knob of the potentiometer, changes the resistance on the two sides of the variable end.</li>
+									<li>Connect the two fixed sides to power (5V) (pin 1) and ground (pin 3)</li>
+									<li>Measure the voltage on the variable end by connecting it to Analog pin A0</li>
+									<li>Follow code directions listed below</li>
+								</ul>
+
+								<h3>Code for Part 3:</h3>
+								<script src="https://gist.github.com/bodhin1121/3dfbc15827fd9f4e7a586f7df2c2b510.js"></script>
+
+								<h3>Average Values:</h3>
+								<ul>
+									<li>The average values of both x and y directions when the joystick is centered (home position) are X: 514 Y: 514</li>
+									<li>The values when the joystick is moved all the way to the left are X: 0 Y: 513</li>
+									<li>The values when the joystick is moved all the way to the right are X: 1023 Y: 513</li>
+									<li>The values when the joystick is moved all the way down are X: 1023 X: 513 Y: 1023 </li>
+									<li>Up: X:0 Y: 513</li>
+									<li>Top right corner: X: 1023 Y: 120</li>
+									<li>Top left corner: X: 0 Y: 0</li>
+									<li>Bottom right corner: X: 1023 Y: 1023</li>
+									<li>Bottom left corner:  X: 0 Y: 1023</li>
+								</ul>
 								<h3 class= major>PART 4: LIGHT ‘EM UP WITH A JOYSTICK</h3>
 
 								<p></p>
