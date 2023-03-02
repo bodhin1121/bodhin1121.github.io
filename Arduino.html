@@ -550,7 +550,6 @@
 									<li>This means that these two pins need to be connected to any of the analog pins on the Arduino (A0-A5)</li>
 									<li>The last pin SW is for the push button, which goes HIGH when you press on the joystick, and LOW otherwise – it can be connected to a digital pin.</li>
 									<li>You can remove the potentiometer breadboard but retain the 5 LEDs, as we will be using them in the next part.</li>
-							
 								</ul>
 
 								<h3>Joystick Schematic:</h3>
@@ -584,7 +583,7 @@
 								<p></p>
 
 								<h3>Problems Faced and Conclusion:</h3>
-								<p>This part of the lab didn't give me too much trouble just gettin all the X and Y values down was a bit of a pain.</p>
+								<p>This part of the lab didn't give me too much trouble just getting all the X and Y values down was a bit of a pain.</p>
 
 
 								<h3 class= major>PART 4: LIGHT ‘EM UP WITH A JOYSTICK</h3>
@@ -611,10 +610,19 @@
 
 
 								<h3>Problems Faced and Conclusion:</h3>
-								<p>I didn't have many problems for this section of the lab I just had to mess around with the code a bit.</p>
+								<p>The only problems I had with this section of the lab was getting the circuit right since that was a bit tricky.</p>
 
 								<h3 class= major>PART 5: BASIC LED WHACK-A-MOLE</h3>
 
+								<h3>Procedure:</h3>
+								<ul>
+									<li>In this part of the lab, we will use the joystick and the plus-arrangement of the LEDs to create a simple whack-a-mole game! The gameplay of this game should be as follows: </li>
+									<li>Each round begins with a welcome/ready message on the serial monitor and two 500ms long blinks of the center LED. After the blinks, all LEDs are off, and the game waits for 1 second for the player to get ready. When the 1 second elapses, a timer starts running (Hint: use a start-time variable to track the time).</li>
+									<li>The game randomly chooses one of the four corner LEDs (top, bottom, left, right) to turn on (Hint: use the random() function from Lab 2). The LED stays on until the player moves the joystick in its direction (e.g. moving the joystick up when the top LED is on/active).</li>
+									<li>As soon as the joystick is moved in the direction of the active LED, it turns off, and the game randomly chooses another LED to turn on. The new LED can be the same as the previous LED. This occurs 20 times.</li>
+									<li>After 20 LEDs have been activated and consequently “whacked” using the joystick, the round is over.  The timer is stopped and the total time taken by the player is displayed on the serial monitor.</li>
+									<li>At the end of the round, the game waits for 3 seconds before going back to step (1) and restarting the round.</li>
+								<ul>
 								<h3>Code for Basic LED WHACK-A-MOLE game</h3>
 								<script src="https://gist.github.com/bodhin1121/903c9715c3f6d443f22d95023dc999dd.js"></script>
 
@@ -626,8 +634,11 @@
 								</video>
 								<p></p>
 
+								<h3>Serial Monitor Output:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2565.jpeg" alt="placeholder" /></span>
+
 								<h3>Problems Faced and Conclusion:</h3>
-								<p>I didn't have many problems for this section of the lab I just had to mess around with the code a bit.</p>
+								<p>Getting the code to work for this was a bit tedious but it turned out well.</p>
 		
 
 							</article>
