@@ -544,13 +544,21 @@
 
 								<h3>Procedure:</h3>
 								<ul>
-									<li>Our kit includes a rotary potentiometer with three pins, two of which are “fixed ends”, and the third is a “variable end”, which, when we rotate the knob of the potentiometer, changes the resistance on the two sides of the variable end.</li>
-									<li>Connect the two fixed sides to power (5V) (pin 1) and ground (pin 3)</li>
-									<li>Measure the voltage on the variable end by connecting it to Analog pin A0</li>
-									<li>Follow code directions listed below</li>
+									<li>After learning about how to use a potentiometer, we can move on to working with an analog joystick!</li>
+									<li>This joystick is simply two potentiometers and a push button combined into one neat package. </li>
+									<li>You will notice that the module has 5 pins: GND, +5V, VRx, VRy, SW. The first two are the ground and power pins, while the third and the fourth are variable pins of the two potentiometers – one for movement along the x-direction (VRx) and the other for movement along the y-direction (VRy).</li>
+									<li>This means that these two pins need to be connected to any of the analog pins on the Arduino (A0-A5)</li>
+									<li>The last pin SW is for the push button, which goes HIGH when you press on the joystick, and LOW otherwise – it can be connected to a digital pin.</li>
+									<li>You can remove the potentiometer breadboard but retain the 5 LEDs, as we will be using them in the next part.</li>
+							
 								</ul>
 
-	
+								<h3>Joystick Schematic:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Joystick.png" alt="placeholder" /></span>
+
+								<h3>Joystick Circut:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Part3_Circuit.jpeg" alt="placeholder" /></span>
+
 								<h3>Code for Part 3:</h3>
 								<script src="https://gist.github.com/bodhin1121/3dfbc15827fd9f4e7a586f7df2c2b510.js"></script>
 
@@ -576,7 +584,7 @@
 								<p></p>
 
 								<h3>Problems Faced and Conclusion:</h3>
-								<p>I didn't have many problems for this section of the lab I just had to mess around with the code a bit.</p>
+								<p>This part of the lab didn't give me too much trouble just gettin all the X and Y values down was a bit of a pain.</p>
 
 
 								<h3 class= major>PART 4: LIGHT ‘EM UP WITH A JOYSTICK</h3>
