@@ -653,12 +653,43 @@
 						<!-- Lab 5 -->
 								<article id="lab5">
 									<h2 class="major">Lab 5</h2>
-									<form action="sendemail.php" method="post">
-										<input type="text" name="name" placeholder="Your Name">
-										<input type="email" name="email" placeholder="Your Email">
-										<textarea name="message" placeholder="Your Message"></textarea>
-										<input type="submit" value="Send">
-									  </form>
+
+								<h3>Description:</h3>
+								<p>
+									This lab is about having the Arduino interact with the world using analog outputs! While we have been using LEDs to output from the Arduino in the past few labs (remember LED Reaction Game and Whack-A-MoLED?), we will now create some complex output from the Arduino in two contexts – visual and sound. In the first two parts of the lab, we will light up the RGB LED in different colors. In the latter two parts, we will create interesting sounds using a piezo buzzer. Finally, in the Extra Volt, you will get the chance to combine the two outputs to create your own audio-visualizer!
+								</p>
+
+								<h3>Materials Used:</h3>
+								<ul>
+									<li>Arduino (Elegoo) Uno R3 Controller Board</li>
+									<li>USB Cable</li>
+									<li>USB Adapter</li>
+									<li>Breadboard Jumper Wire</li>
+									<li>Resistors</li>
+									<li>LEDs</li>
+									<li>Joystick Module</li>
+									<li>Passive Buzzer</li>
+									<li>Multimeter</li>
+								</ul>
+
+								<h3 class= major>PART 1: WIRING UP THE RGB LED</h3>
+
+								<h3>Procedure:</h3>
+								<ul>
+									<li>In the first part of the lab, we will connect the RGB LED from our kits to the Arduino</li>
+									<li>In the RGB LED included in our kit, the longest leg is for ground, which is also the second pin from the flat side of the LED bulb</li>
+									<li>Be super careful while connecting the four pins to the Arduino and double check before powering the circuit</li>
+									<li>An important thing to note is that not all the digital pins on the Arduino support Pulse-Width Modulation, which is what we need to make the RGB LED turn on into different colors</li>
+									<li>Only pins with numbers labeled with a ‘~’ next to them allow PWM – which include 3, 5, 6, 9, 10, 11 on the Arduino Uno board</li>
+									<li></li>
+								</ul>
+
+								
+
+								<h3>LED Pins + Wiring Diagram:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Lab5.png" alt="placeholder" /></span>
+
+
 								</article>
 
 						<!-- Elements -->
