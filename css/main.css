@@ -639,6 +639,7 @@ input, select, textarea {
 		position: relative;
 	}
 
+		/*Controls the image opacity*/
 		.image:before {
 			pointer-events: none;
 			/* background-image: url("/img/overlay.png"); */
@@ -648,7 +649,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0;
+			opacity: -0.75;
 			position: absolute;
 			top: 0;
 			width: 100%;
