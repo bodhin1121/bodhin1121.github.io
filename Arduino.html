@@ -852,7 +852,11 @@
 								<ul>
 									<li>Trying to power motors from the Arduino can burn out the Arduino pins, and sometimes even the USB port on your computer. Therefore, we will be using the 9V battery along with the power supply module from our kit to power the motors we use in this lab.</li>
 									<li>Refer to Lab 1 and Figure 1 below to refresh your memory about the power supply module, and connect it to your breadboard such that one of the power rails provides the voltage of 5V, and the other provides that of 3.3V.</li>
+									<li>The only thing we need to make sure is that the ground of the motor power and the ground of the Arduino are connected to each other. However, the 5V from the Arduino should not be connected to the 5V from the power supply module on the breadboard.</li>
 								</ul>
+
+								<h3>Power Set Up</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2812.jpeg" alt="placeholder" /></span>
 
 								<h3 class= major>PART 1: WIRING THE SERVO</h3>
 
@@ -860,11 +864,8 @@
 								<ul>
 									<li>The servo consists of three wire connections – power or 5V (red), ground (brown), signal (orange/yellow). After we set up the motor power using the power supply module, we can connect the power and ground to the 5V rails.</li>
 									<li>Install Servo.h library in Arduino IDE</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li>Make sure you add one of the servo attachments to the servo shaft (included in the kit) so that it is possible to see the servo rotate.</li>
+									<li>Follow the code listed below</li>
 								</ul>
 
 								<h3>Servo motor wired</h3>
@@ -881,11 +882,28 @@
 									<li>Follow the code listed below</li>
 								</ul>
 
+								<h3 class= major>PART 2: CONTROLLING THE SERVO</h3>
 
-								<h3>Video of given melody on buzzer</h3>
+								<h3>Potentiometer wiring:</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2803.jpeg" alt="placeholder" /></span>
+
+								<h3>Code to move the servo in sync with the potentiometer</h3>
+								<script src="https://gist.github.com/bodhin1121/41a876f3d8d85deefc251347d6a9f76b.js"></script>
+								<p></p>
+						
+
+								<h3>Video of servo moving in sync with the potentiometer</h3>
 								<p></p>
 								<video controls="controls" width="100%" height="50%" name="Video Name">
-									<source src="https://bodhin1121.github.io/img/IMG_2776.mov">
+									<source src="https://bodhin1121.github.io/img/IMG_2804.mov">
+								</video>
+								<p></p>
+
+
+								<h3>Video of the delay period changing from 5ms to 50ms based on the input from the potentiometer</h3>
+								<p></p>
+								<video controls="controls" width="100%" height="50%" name="Video Name">
+									<source src="https://bodhin1121.github.io/img/IMG_2804.mov">
 								</video>
 								<p></p>
 
