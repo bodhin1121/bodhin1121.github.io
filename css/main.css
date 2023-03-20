@@ -120,6 +120,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
+				overflow: auto;
 				font-size: 0.95em;
 				word-wrap: break-word;
 			}
@@ -129,6 +130,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
+				overflow: auto;
 				font-size: 0.8em;
 				word-wrap: break-word;
 			}
