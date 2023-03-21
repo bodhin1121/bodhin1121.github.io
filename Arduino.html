@@ -859,7 +859,7 @@
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2812.jpeg" alt="placeholder" /></span>
 
 								<h3>Problems Faced and Conclusion:</h3>
-
+								<p>I did not have any issues with this part of the lab</p>
 
 								<h3 class= major>PART 1: WIRING THE SERVO</h3>
 
@@ -883,7 +883,7 @@
 
 
 								<h3>Problems Faced and Conclusion:</h3>
-
+								<p>I did not have any issues with this part of the lab</p>
 
 								<h3 class= major>PART 2: CONTROLLING THE SERVO</h3>
 
@@ -896,7 +896,7 @@
 								<h3>Potentiometer wiring:</h3>
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_2803.jpeg" alt="placeholder" /></span>
 
-								<h3>Code to move the servo in sync with the potentiometer</h3>
+								<h3>Code to move the servo in sync with the potentiometer:</h3>
 								<script src="https://gist.github.com/bodhin1121/41acf45d50ce5b1ef43769d78684f1a8.js"></script>
 								<p></p>
 			
@@ -909,7 +909,7 @@
 								<p></p>
 
 
-								<h3>Code for delay period changing from 5ms to 50ms based on the input from the potentiometer</h3>
+								<h3>Code for delay period changing from 5ms to 50ms based on the input from the potentiometer:</h3>
 								<script src="https://gist.github.com/bodhin1121/32ac885145f7d11c852a68987a5434d0.js"></script>
 								<p></p>
 
@@ -929,13 +929,17 @@
 
 								<h3>Procedure:</h3>
 								<ul>
-									<li>Similar to how we have been using the potentiometer in the last few labs, connect the potentiometer to the Arduino</li>
-									<li>Follow the code listed below</li>
+									<li>As discussed earlier, the Arduino should not be used to power the DC motor because of high current requirements, as well as current fluctuations that occur during a motor operation that may be harmful to the Arduino.</li>
+									<li>Therefore, we use a motor driver, which provides the motors with their own power source, while still allowing control from the Arduino.</li>
+									<li>Wire the L293D chip according to the schematic provided below</li>
+									<li>Follow the different samples of code provided to perform the different actions</li>
 								</ul>
 
 								<h3>Picture of the basic fan circuit</h3>
 
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Basic_Fan.png" alt="placeholder" /></span>
+
+							
 
 								<h3>Video of basic fan circuit working</h3>
 
@@ -946,8 +950,12 @@
 								<p></p>
 
 								<h3>Part 3 Schematic</h3>
-								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Part3_Circuit.png" alt="placeholder" /></span>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Part3_Schematic.png" alt="placeholder" /></span>
 
+								<h3>Sample code for fan spinning</h3>
+								<script src="https://gist.github.com/bodhin1121/b02940b1a994074d4209b91a766ea8a9.js"></script>
+								<p></p>
+								
 								<h3>Connection of the circuit with the motor driver</h3>
 								
 								<p></p>
@@ -956,22 +964,33 @@
 								</video>
 								<p></p>
 								
-								<h3>Part 3 Schematic</h3>
-								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Part3_Circuit.png" alt="placeholder" /></span>
+								<h3>Code with the addition of backward() function</h3>
+								<script src="https://gist.github.com/bodhin1121/c77cac6dc800754b821af0c2a5dbabd9.js"></script>
 
-								<h3>Sample code for fan spinning</h3>
-								<script src="https://gist.github.com/bodhin1121/b02940b1a994074d4209b91a766ea8a9.js"></script>
-								
-								<p></p>
+								<h3>Video of forward() and backward() function working</h3>
+ 								<p></p>
 								<video controls="controls" width="100%" height="50%" name="Video Name">
 									<source src="https://bodhin1121.github.io/img/IMG_2834.mov">
 								</video>
 								<p></p>
+
+								<h3>Code for complete sketch with rampUp() and rampDown()</h3>
+								<script src="https://gist.github.com/bodhin1121/3c27e412d6d53cee6f475b36503d9b31.js"></script>
+
 								
+								<h3>Video of rampUp() and rampDown() function working</h3>
+								<p></p>
+							   <video controls="controls" width="100%" height="50%" name="Video Name">
+								   <source src="https://bodhin1121.github.io/img/IMG_2836.mov">
+							   </video>
+							   <p></p>
+
 
 								<h3>Problems Faced and Conclusion:</h3>
 
-
+								<p>I had a lot of issues with this section of the lab since my L293D chip kept getting fried and I burnt out 2 of them before I figured out I wasn't being careful enough disconecting the power before messing around with the wiring.</p>
+								
+								
 								<h3 class= major>PART 4: TABLE-TOP FAN</h3>
 
 								<p>For the fan to spin at 70% speed we multiply the max output value of 255*0.7 to get 178.5</p>
