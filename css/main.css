@@ -122,7 +122,6 @@ input, select, textarea {
 			html {
 				overflow: auto;
 				font-size: 0.95em;
-				word-wrap: break-word;
 			}
 
 		}
@@ -132,7 +131,6 @@ input, select, textarea {
 			html {
 				overflow: auto;
 				font-size: 0.8em;
-				word-wrap: break-word;
 			}
 
 		}
@@ -233,7 +231,7 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1.025em;
 			line-height: 1.5;
 		}
 
