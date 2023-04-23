@@ -33,6 +33,7 @@
 								<li><a href="#lab5">Lab 5</a></li>
 								<li><a href="#lab6">Lab 6</a></li>
 								<li><a href="#lab7">Lab 7</a></li>
+								<li><a href="#final">Final Project</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -1070,6 +1071,7 @@
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/Processing.png" alt="placeholder" /></span>
 
 								<h3>Problems Faced and Conclusion:</h3>
+								<p>I didn't face any problems with this section of the lab</p>
 
 								<h3 class="major">PART 1: CREATING WITH PROCESSING</h3>
 
@@ -1102,14 +1104,18 @@
 								<p></p>
 
 								<h3>Problems Faced and Conclusion:</h3>
-
+								<p>I didn't face any problems with this section of the lab</p>
 
 								<h3 class="major">PART 2: PROCESSING WITH ARDUINO</h3>
 
 								<h3>Procedure:</h3>
 								<ul>
-									<li></li>
-									<li></li>
+									<li>Connect the joystick module to the Arduino and write a sketch to read its X and Y positions and the state of the push button. To make the push button work, set up the internal pull-up resistor in the Arduino using the pinMode() function call.</li>
+									<li>Format the values of X, Y, and push button state as a string in a fixed format, for example: "xVal:VALUE;yVal:VALUE;swVal:VALUE;". The X and Y values are analog values between 0-1023, and the push button state is represented as 1 if not pressed and 0 if pressed. Print this string on the serial monitor from the Arduino.</li>
+									<li>Write a Processing sketch to read the serial data sent from the Arduino and update the animation accordingly. Import the Serial library and create an object to handle serial communication. Use the sample starter code provided to set up the serial communication and use a HashMap to store the received values.</li>
+									<li>Parse the serial data received from the Arduino using the split() function and update the X and Y positions of the circles and the state of the push button. Use the HashMap to store the received values and retrieve them when needed.</li>
+									<li>Finally, use the updated values to control the movements of the circles in the Processing sketch. For example, use the X and Y positions to change the position of the circles on the screen, and use the push button state to change their color or size.</li>
+									<li>Remember that serial communication is one-to-one, so only one application on the computer can communicate with the Arduino at a time. Close the serial monitor when running the Processing sketch or vice versa.</li>
 								</ul>
 
 
@@ -1126,8 +1132,23 @@
 								<h3>Arduino code for part 2:</h3>
 								<script src="https://gist.github.com/bodhin1121/c8dd02dfa7f75a42c58d6eee2a6cb155.js"></script>
 								
+								<h3>Video of Processing Modification Working</h3>
+								<p></p>
+								<video controls="controls" width="100%" height="50%" name="Video Name">
+									<source src="https://bodhin1121.github.io/img/IMG_3016.mov">
+								</video>
+								<p></p>
+
+								<h3>Processing code for part 2:</h3>
+								<script src="https://gist.github.com/bodhin1121/7549d30ff2acebf4862f331ce4bf7a2e.js"></script>
 								<h3>Problems Faced and Conclusion:</h3>
 
+
+							</article>
+
+							<article id="final">
+								<h2 class="major">Final Project</h2>
+								
 
 							</article>
 
