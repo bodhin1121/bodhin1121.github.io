@@ -1287,23 +1287,25 @@
 
 								<h3>Process:</h3>
 
-								<p>Because I needed to bend the LEDs to create the river affect
+								<p>
+									Because I needed to bend the LEDs to create the river effect, I added silicone channels to make it easier to manipulate the LEDs for hot gluing also diffusing the light. I went through each section marked to have LEDs and cut the strips to length. Soldering for this project was essential because it allowed me to chain the LEDs and space them out throughout the installation while still being connected in series. After each new solder joint, I would use a multimeter to test continuity before adding hot glue to ensure no potential short circuits. I established a color heirarchy having power be red, ground be white, and green be for the PWM pin. This part of the project was by far the most time-consuming and laborious. Having to be very detailed and patient with not only the soldering but also the gluing took up the bulk of the project.
+								</p>
 
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3100.jpeg" alt="placeholder" /></span>
-
+								
+								<h3>Using hot glue to insulate the solder connections and ensure no short circuits</h3>
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3108.jpeg" alt="placeholder" /></span>
 								
-
+								<h3>All of the LEDs glued and soldered together</h3>
+								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3137.jpeg" alt="placeholder" /></span>
 
 
 								<h3 class="major">Part 4: Setting up the power supply module</h3>
 
 								<h3>Process:</h3>
 
-								<p>Since this installation consists of 270 LEDs which require 60 mA per LED (16.2 amps total) I purchased a 5V, 60 amp power supply to ensure that the LEDs had enough power.
-								To set up this power supply I stripped down an old computer cable, adding crimpable terminals to each of the wires for extra security. To hook up this power cable to the power
-								supply module you must be careful to check the 3 wires for power, ground, neutral. I referenced this YouTube video <a href="https://www.youtube.com/watch?v=Ls-6BeLHbA0">here</a>
-								when setting up these chords as well as testing the difference wires with a multimeter since the color coding is sometimes inconsistent. </p>
+								<p>Since this installation consists of 270 LEDs which require 60 mA per LED (16.2 amps total) I purchased a 5V, 60 amp power supply to ensure that the LEDs had enough power. Setting up this power supply, I stripped down an old computer cable, adding crimpable terminals to the wires for extra security. To connect the power cable to the power supply module, you must diligently check the three wires for power, ground, and neutral. I referenced this YouTube video <a href="https://www.youtube.com/watch?v=Ls-6BeLHbA0">here</a> when setting up these chords as well as testing the different wires with a multimeter since the color coding is sometimes inconsistent. Once the wires are connected to the module correctly, use a multimeter to ensure that 5V is being supplied.</p>
+								<p>Additionally, to avoid a voltage drop in the long distance between the LEDs/ Power Supply Module, I purchased two 6 ft. strands of 12 gauge wire to solder into the power and ground wires of the LEDs. This size of wire allowed me to add terminals and screw them into the power and ground sections of the supply module. After these steps were complete, I ran some test code to ensure that all the LEDs lit up correctly.</p>
 
 								<h3>Adding terminals to the power cable</h3>
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3109.jpeg" alt="placeholder" /></span>
@@ -1314,13 +1316,14 @@
 								<h3>Soldering the 12 guage wire into the power for the LEDs</h3>
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3132.jpeg" alt="placeholder" /></span>
 
+
 								<h3 class="major">Part 5: Building the Frame</h3>
 
 								<h3>Process:</h3>
 
 								<p>
-									For this part of the project I cut the two pieces of 0.75" x 2.5" x 8' pine using a miter saw to create the 45 degree miter joints for the frame. 
-									After the wood had been cut I used the Honey Classic Wood Stain to stain the wood. Once this was completed, I nailed the frame together using #16 x 1-1/2 in. Wire Nails.
+									For this part of the project, I cut the two pieces of 0.75" x 2.5" x 8' pine using a miter saw to create the 45-degree miter joints for the frame. 
+									After the wood had been cut I used the Honey Classic Wood Stain to stain the wood. Once this was completed, I nailed the frame together using #16 x 1-1/2 in. wire nails.
 								</p>
 
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3147.jpeg" alt="placeholder" /></span>
@@ -1333,6 +1336,9 @@
 								<h3 class="major">Part 6: Gluing the moss</h3>
 
 								<span class="image main"><img src="http://bodhinpeterson-smart.me/img/IMG_3157.jpeg" alt="placeholder" /></span>
+
+
+
 
 								<h3 class="major">Part 7: Code/ Arduino Setup</h3>
 
@@ -1349,6 +1355,8 @@
 								<h3>Code for LEDs and hc-sr04 Ultrasonic Sensor</h3>
 								<script src="https://gist.github.com/bodhin1121/7f755ac41391d248d0d2437ea7bd058d.js"></script>
 
+
+								<h3 class="major">Challanges Faces:</h3>
 
 							</article>
 
