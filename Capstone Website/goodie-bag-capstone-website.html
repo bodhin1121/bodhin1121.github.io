@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodie Bag Rewards - Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #EE2B3A;
+            --background: #FFF9F9;
+            --accent: #19A689;
+            --text: #404040;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+        }
+        
+        body {
+            background-color: var(--background);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            height: 40px;
+        }
+        
+        .btn {
+            background-color: white;
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        /* Case Study */
+        .case-study {
+            padding: 60px 0;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background-color: var(--accent);
+            bottom: -5px;
+            left: 0;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        
+        .meta-item h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        
+        .meta-item p {
+            font-size: 1.1rem;
+        }
+        
+        .challenge, .research, .design {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            color: var(--accent);
+            margin: 25px 0 15px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .quote {
+            background-color: var(--background);
+            padding: 25px;
+            border-left: 4px solid var(--primary);
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        .highlight {
+            background-color: rgba(238, 43, 58, 0.1);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        /* Testing Results */
+        .testing-results {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .testimonial {
+            padding: 20px;
+            background-color: var(--background);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial p {
+            margin-bottom: 10px;
+        }
+        
+        .user-name {
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .modal-content {
+            background-color: var(--background);
+            margin: 10% auto;
+            padding: 40px;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 15px;
+            position: relative;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            background-color: #ddd;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 10px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#">
+                <img src="/api/placeholder/150/40" alt="Goodie Bag Logo" class="logo">
+            </a>
+            <a href="#" id="aboutBtn" class="btn">About Me</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Goodie Bag Rewards - Product Case Study</h1>
+            <p>Designing a comprehensive rewards system for an app-based surplus food marketplace, boosting customer retention and engagement</p>
+            <img src="https://drive.google.com/file/d/11OiTL4cNPf0rx8Yys4mqAgWUGNc8V41m/view?usp=sharing" alt="Goodie Bag Rewards App Interface" class="hero-image">
+        </div>
+    </section>
+    
+    <!-- Case Study Content -->
+    <section class="case-study">
+        <div class="container">
+            <!-- Project Introduction -->
+            <div class="section" id="project">
+                <h2 class="section-title">Project Introduction</h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h3>Duration</h3>
+                        <p>Five months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>My Role</h3>
+                        <p>Primary Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Collaboration</h3>
+                        <p>Goodie Bag CPO Luke Siegert</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>User Base</h3>
+                        <p>60,000+ active users</p>
+                    </div>
+                </div>
+                
+                <div class="challenge">
+                    <h3>Project Summary</h3>
+                    <p>For this project, I designed and delivered a comprehensive rewards system for Goodie Bag, an app-based marketplace for surplus food. Goodie Bag rewards create loyalty, boosting customer retention and increasing engagement through milestone-based cash back rewards for in-app purchases. With Goodie Bag serving over 60,000 active users, this rewards system significantly improves user retention and encourages repeat purchases through meaningful incentives.</p>
+                    
+                    <h3>Challenge</h3>
+                    <p>Goodie Bag faced several challenges that I addressed with this project:</p>
+                    <ul>
+                        <li>Although Goodie Bag has been growing rapidly, customer engagement and retention needed improvement, with users requiring additional incentives to place orders more frequently</li>
+                        <li>The previous app experience lacked sufficient engagement features that encouraged users to return regularly</li>
+                        <li>The company wanted to bolster its in-app referral system to acquire new customers through existing users while maintaining a low customer acquisition cost</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Research Section -->
+            <div class="section" id="research">
+                <h2 class="section-title">Research</h2>
+                <div class="research">
+                    <h3>User Needs Analysis</h3>
+                    <p>Based on seven phone calls with high and low frequency users, Goodie Bag customers reported overall positive experiences with the app, but expressed that a rewards program would boost its value to them. Users strongly preferred earning in-app credits or discounts through purchases and referrals, with a slight preference for smaller, more frequent rewards over larger, infrequent ones.</p>
+                    <p>They expressed that the most valuable reward systems in their lives were from coffee chains such as Starbucks and Dunkin', food delivery apps, and credit card reward programs. Both high and low-frequency users showed enthusiasm for working towards milestones and referring friends if properly rewarded, suggesting significant growth potential through a well-designed loyalty program.</p>
+                    
+                    <h3>Competitive Analysis</h3>
+                    <p>Analyzing reward systems across fast food chains and other sustainability platforms revealed key industry patterns and opportunities for differentiation. I examined Starbucks' tiered redemption structure, Chipotle's gamified challenges, and Panera's behavior-based personalization. This research informed several key design decisions, including the milestone reward structure and favorite location feature.</p>
+                    
+                    <h3>How Might We Statements</h3>
+                    <p>This information allowed me to formulate the following "how might we" statements:</p>
+                    <ul>
+                        <li>How might we create a rewards system that provides immediate value while encouraging long-term loyalty?</li>
+                        <li>How might we develop a referral system that benefits existing and new users?</li>
+                        <li>How might we integrate rewards seamlessly into the existing checkout flow?</li>
+                        <li>How might we use gamification to make the rewards experience more engaging?</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Design Section -->
+            <div class="section" id="design">
+                <h2 class="section-title">Design Process</h2>
+                <div class="design">
+                    <h3>Problem Statement</h3>
+                    <p>Goodie Bag users need a way to engage with the platform that incentivizes and rewards consistent purchases, increasing customer retention and satisfaction.</p>
+                    
+                    <h3>User Flow</h3>
+                    <p>I created user flow diagrams to map out how customers would interact with the rewards system across several key journeys:</p>
+                    <ul>
+                        <li>Discovering their rewards balance</li>
+                        <li>Selecting a favorite reward location</li>
+                        <li>Referring friends</li>
+                        <li>Applying rewards during checkout</li>
+                        <li>Progressing through reward levels</li>
+                    </ul>
+                    
+                    <h3>Low & Mid Fidelity Wireframes</h3>
+                    <p>Starting the prototyping process, I created low-fidelity wireframes to structure the rewards experience and determine the placement of key elements. These initial designs focused on the core functionality: displaying reward balances, showing milestone progress, and integrating rewards into the checkout flow.</p>
+                    <p>As I developed mid-fidelity wireframes, I explored two distinct design directions (Version A and Version B) to address the rewards interface. Version A used a prominent red header with bold visual elements, while Version B took a more minimalist approach with a white background and simplified layout. These two versions would be tested with users to determine the most effective approach.</p>
+                    
+                    <h3>A/B Testing & Iteration</h3>
+                    <p>I conducted structured usability tests with five participants to evaluate both versions of the prototype. Each participant was asked to review each version and provide feedback on clarity, information hierarchy, and overall impressions.</p>
+                    
+                    <h4>Key Findings from Version A:</h4>
+                    <ul>
+                        <li>Users responded positively to the colorful design and found it more engaging</li>
+                        <li>The rewards balance and history were highly visible and accessible</li>
+                        <li>The balance history toggle was appreciated for its simplicity</li>
+                        <li>Some users found the "login streak" feature slightly confusing without more explanation</li>
+                        <li>The milestone progress indicators were visually appealing and well-received</li>
+                    </ul>
+                    
+                    <h4>Key Findings from Version B:</h4>
+                    <ul>
+                        <li>Some users felt this version appeared "more boring" or too minimalist</li>
+                        <li>The larger images were described as potentially distracting by one participant</li>
+                        <li>Users appreciated the clearer explanation of the login streak feature</li>
+                        <li>One user noted missing information about how to redeem rewards</li>
+                    </ul>
+                    
+                    <p>User Preferences: Five out of five users preferred Version A overall, citing the colorful design and visual appeal as primary reasons.</p>
+                    
+                    <h3>Iterations Based on Feedback</h3>
+                    <p>Based on usability testing results, I made several targeted improvements to the design:</p>
+                    <ul>
+                        <li>Rewards Level Clarification: Added explanations of level benefits and progression requirements</li>
+                        <li>Location Specificity: Added the ability to select specific branch locations and address information</li>
+                        <li>Redemption Process: Made the redemption button more prominent in the final design</li>
+                        <li>Login Streak Clarity: Incorporated clearer explanation of login streaks from Version B while maintaining the visual appeal of Version A</li>
+                        <li>Visual Contrast: Improved button contrast based on feedback about readability issues</li>
+                        <li>Language Clarification: Revised unclear wording about "new shop" visits</li>
+                    </ul>
+                    
+                    <h3>High Fidelity Wireframes</h3>
+                    <p>For my high-fidelity prototype, I incorporated the stronger elements from both version concepts, with a primary foundation based on Version A (the clearly preferred design) while addressing the usability issues identified in testing. The final design includes:</p>
+                    <ul>
+                        <li>A clear rewards dashboard showing current balance and favorite location with the colorful design from Version A</li>
+                        <li>Gamified level progression system with character mascots (Weeny, Pizza Pro, Donut Dude, Sushi Slayer) and clear explanations of benefits</li>
+                        <li>Visual milestone tracking for referrals and purchases with improved progress indicators</li>
+                        <li>Seamless reward redemption during checkout with a prominent, high-contrast button</li>
+                        <li>Location selection with confirmation safeguards and specific address information</li>
+                        <li>Special time-limited reward opportunities with clearer language</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Testing Results -->
+            <div class="section" id="testing">
+                <h2 class="section-title">Testing Results</h2>
+                <div class="testing-results">
+                    <h3>User Feedback</h3>
+                    <p>User feedback on the final design was overwhelmingly positive:</p>
+                    
+                    <div class="testimonial">
+                        <p>"I would use the app more if there were rewards"</p>
+                        <p class="user-name">- Charelle</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"I liked it, and it would probably make me click on the app more often"</p>
+                        <p class="user-name">- Charleen</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"A cool addition to have on the app"</p>
+                        <p class="user-name">- Chelsea</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"Seems like a good opportunity to try new shops and use the app more"</p>
+                        <p class="user-name">- Chapin</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"Looks great. Am a fan."</p>
+                        <p class="user-name">- Celia</p>
+                    </div>
+                    
+                    <p>This feedback validates that the rewards system successfully addresses the initial challenge of increasing user engagement and retention.</p>
+                    
+                    <h3>Final Design</h3>
+                    <p>The final Goodie Bag Rewards design includes:</p>
+                    <ul>
+                        <li><span class="highlight">Profile Screen:</span> Displaying reward balance prominently with quick access to milestone progress</li>
+                        <li><span class="highlight">Rewards Dashboard:</span> Showing current level, favorite location, and available rewards with the colorful, engaging design that users preferred</li>
+                        <li><span class="highlight">Favorite Location Selection:</span> Allowing users to maximize rewards at their preferred restaurant, with added specificity for chain locations</li>
+                        <li><span class="highlight">Milestone Tracking:</span> Visual progress indicators for referrals and purchase goals with clear rewards for each achievement</li>
+                        <li><span class="highlight">Checkout Integration:</span> Seamless application of rewards during the payment process with prominent redemption buttons</li>
+                        <li><span class="highlight">Referral System:</span> Easy-to-use friend referral flow with clear explanation of the "$5 for you, $5 for your friend" benefit</li>
+                        <li><span class="highlight">Levels System:</span> Gamified progression through multiple reward tiers with character mascots and explicit benefits for each level</li>
+                    </ul>
+                    
+                    <h3>Reflection</h3>
+                    <p>This project allowed me to design a comprehensive rewards system that addresses real business needs while providing substantial value to users. Through methodical A/B testing and iterative design improvements, I created a solution that users found engaging and motivating.</p>
+                    
+                    <h3>Future Plans</h3>
+                    <p>If I had more time to work on this project, I would:</p>
+                    <ul>
+                        <li>Conduct additional user testing on the finalized design</li>
+                        <li>Explore opportunities to further personalize the rewards experience based on user behavior patterns</li>
+                        <li>Investigate implementation of push notifications for reward availability and expiration to increase redemption rates</li>
+                        <li>Consider adding dietary restriction filters to make the experience more accessible to all users</li>
+                    </ul>
+                    
+                    <h3>Conclusion</h3>
+                    <p>The colorful, gamified approach of Version A, combined with the functional clarity of certain elements from Version B, resulted in a final design that successfully balances visual appeal with usability. The Goodie Bag Rewards program has strong potential to significantly improve customer retention and satisfaction while driving new user acquisition through referrals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Goodie Bag Case Study</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribbble</a>
+                <a href="#">Email</a>
+            </div>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </footer>
+    
+    <!-- About Me Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/api/placeholder/150/150" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>I'm a UX/UI designer passionate about creating intuitive, engaging, and meaningful digital experiences. With a background in user-centered design principles and a keen eye for detail, I specialize in transforming complex challenges into simple, elegant solutions.</p>
+            <p>For the Goodie Bag Rewards project, I worked as the primary designer to create a comprehensive rewards system that drives user engagement and retention while enhancing the overall app experience.</p>
+            <h3>My Design Philosophy</h3>
+            <p>I believe good design should be invisible - it should feel natural and intuitive to users while solving real problems. Through research, testing, and iteration, I work to create products that not only look good but work well and provide genuine value.</p>
+            <h3>Contact</h3>
+            <p>Feel free to reach out if you'd like to discuss this project or potential collaborations!</p>
+            <a href="mailto:hello@example.com" class="btn" style="margin-top: 20px;">Get in Touch</a>
+        </div>
+    </div>
+    
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("aboutModal");
+        const btn = document.getElementById("aboutBtn");
+        const span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if(this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Scroll to top functionality
+        document.querySelector('footer .btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
