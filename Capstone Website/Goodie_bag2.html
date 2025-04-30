@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Goodie Bag Rewards – Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #EE2B3A;
+      --background: #FFF9F9;
+      --accent: #19A689;
+      --text: #404040;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; color:var(--text) }
+    body { background:var(--background); line-height:1.6; }
+    .navbar {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 2rem; background:var(--primary);
+      position:sticky; top:0; z-index:10;
+    }
+    .logo img { height:40px }
+    .nav-links { list-style:none }
+    .nav-links li { display:inline-block; margin-left:1rem }
+    .nav-link {
+      color:#fff; text-decoration:none; padding:0.5rem 1rem; border-radius:4px;
+      transition:opacity .3s;
+    }
+    .nav-link:hover { opacity:0.8 }
+    .about-btn {
+      background:#fff !important; color:var(--primary) !important;
+      font-weight:500;
+    }
+
+    .hero { text-align:center; padding:2rem 0 }
+    .hero img {
+      width:85%; /* 3/4 size */
+      height:auto;
+      display:block; margin:0 auto;
+      opacity:0; transform:translateY(20px);
+      transition:all .8s ease-out;
+    }
+    .hero.visible img {
+      opacity:1; transform:translateY(0);
+    }
+
+    .container { max-width:1000px; margin:2rem auto; padding:0 1rem }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      text-align: center;
+      /* ↑ add this: */
+      margin-top: 4rem;    /* ↑ more space above the title */
+      margin-bottom: -0.5rem; /* ↑ tighten the gap below */
+    }
+    .project-meta p {
+      display:inline-block; margin-right:2rem;
+      color:var(--accent); font-weight:500;
+    }
+    .section-box {
+      background:#fff; 
+      border-radius:8px; padding:1.5rem; margin-bottom:2rem;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+      opacity:0; transform:translateY(20px);
+      transition:all .6s ease-out;
+    }
+    .section-box.visible {
+      opacity:1; transform:translateY(0);
+    }
+    h2 {
+      font-size:1.8rem; margin-bottom:1rem; color:var(--primary);
+    }
+    h3 {
+      font-size:1.4rem; margin:1rem 0 .5rem; color:var(--accent);
+    }
+    p, ul { margin-bottom:1rem }
+    ul { margin-left:1.2rem; list-style:disc }
+    footer {
+      text-align:center; padding:2rem 0; background:#fff;
+      color:var(--text); font-size:.9rem; margin-top:4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="https://raw.githubusercontent.com/bodhin1121/bodhin1121.github.io/main/img/Goodie_Bag_Logo.png" alt="Goodie Bag Logo"></div>
+    <ul class="nav-links">
+      
+      <li><a href="about.html" class="nav-link about-btn">About Me</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Goodie Bag Rewards – Product Case Study</h1>
+    </div>
+
+  <section class="hero" id="hero">
+    <img src="https://raw.githubusercontent.com/bodhin1121/bodhin1121.github.io/main/img/iPhone15Pro.png" alt="Goodie Bag Rewards">
+  </section>
+  
+    <div class="project-meta">
+      <p><strong>Duration:</strong> Five months</p>
+      <p><strong>Role:</strong> Primary designer w/ CPO Luke Siegert</p>
+    </div>
+
+  <div class="section-box">
+      <h2>Project introduction</h2>
+      <p><strong>Summary:</strong> For this project, I designed and delivered a comprehensive rewards system for Goodie Bag, an app-based marketplace for surplus food. Goodie Bag rewards create loyalty, boosting customer retention and increasing engagement through milestone-based cash back rewards for in-app purchases. With Goodie Bag serving over 90,000 active users, this rewards system significantly improves user retention and encourages repeat purchases through meaningful incentives.
+      </p>
+    </div>
+
+    <div class="section-box">
+      <h2>Challenge</h2>
+      <p>Goodie Bag faced several challenges that I addressed with this project. Although Goodie Bag has been growing rapidly, customer engagement and retention need improvement, with users requiring additional incentives to place orders more frequently. The previous app experience lacked sufficient engagement features that encouraged users to return regularly. Additionally, the company wanted to bolster its in-app referral system to acquire new customers through existing users while maintaining a low customer acquisition cost.</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Research</h2>
+      <h3>User needs analysis</h3>
+      <p>Seven calls with varied users revealed a strong appetite for milestone-based, frequent rewards…</p>
+      <h3>Competitive analysis</h3>
+      <ul>
+        <li>Starbucks’ tiers</li>
+        <li>Chipotle’s gamified challenges</li>
+        <li>Panera’s personalization</li>
+      </ul>
+      <p><em>How might we…?</em></p>
+      <ul>
+        <li>Provide immediate value + long-term loyalty?</li>
+        <li>Develop a win-win referral system?</li>
+        <li>Seamlessly integrate rewards at checkout?</li>
+        <li>Use gamification for engagement?</li>
+      </ul>
+    </div>
+
+    <div class="section-box">
+      <h2>Design & Wireframes</h2>
+      <p>Mapped flows for balance discovery, location selection, referrals, checkout, level progression; low-fi → mid-fi (A vs B)…</p>
+    </div>
+
+    <div class="section-box">
+      <h2>A/B Testing & Iteration</h2>
+      <h3>Methodology</h3>
+      <p>Five participants, alternating A/B order, feedback on clarity & visuals.</p>
+      <h3>Findings</h3>
+      <strong>Version A:</strong>
+      <ul>
+        <li>Very engaging</li>
+        <li>Balance/history toggle loved</li>
+        <li>Some login-streak confusion</li>
+        <li>Contrast issues</li>
+      </ul>
+      <strong>Version B:</strong>
+      <ul>
+        <li>“Too boring”</li>
+        <li>Clearer streak text</li>
+        <li>Missing redemption steps</li>
+      </ul>
+      <p><strong>Overall:</strong> 5/5 preferred A for color & energy.</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Final Design</h2>
+      <ul>
+        <li>Colorful dashboard, balance + favorite location</li>
+        <li>Gamified levels (Weeny → Pizza Pro → …)</li>
+        <li>Milestone trackers</li>
+        <li>High-contrast checkout button</li>
+        <li>Branch-specific location picker</li>
+        <li>History toggle</li>
+      </ul>
+    </div>
+
+    <div class="section-box">
+      <h2>User Feedback</h2>
+      <ul>
+        <li>“I would use the app more if there were rewards.” – Charelle</li>
+        <li>“It would probably make me click on the app more.” – Charleen</li>
+        <li>“A cool addition to have on the app.” – Chelsea</li>
+        <li>“Good chance to try new shops.” – Chapin</li>
+        <li>“Looks great. Am a fan.” – Celia</li>
+      </ul>
+    </div>
+
+    <div class="section-box">
+      <h2>Reflection & Future Plans</h2>
+      <p>Next: more usability tests, push notifications for expirations, dietary-filter options.</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Conclusion</h2>
+      <p>Through A/B testing & iteration, delivered a gamified, engaging rewards system that boosts retention & referrals.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Bodhin Peterson-Smart
+  </footer>
+
+  <script>
+    // fade in hero
+    window.addEventListener('load', () => {
+      document.getElementById('hero').classList.add('visible');
+    });
+    // fade-in sections on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const boxes = document.querySelectorAll('.section-box');
+      const obs = new IntersectionObserver((entries, o) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            o.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      boxes.forEach(b => obs.observe(b));
+    });
+  </script>
+</body>
+</html>

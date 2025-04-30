@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>About Me – Bodhin Peterson-Smart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #EE2B3A;
+      --background: #FFF9F9;
+      --accent: #19A689;
+      --text: #404040;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; color:var(--text) }
+    body { background:var(--background); line-height:1.6; }
+    .navbar {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 2rem; background:var(--primary);
+      position:sticky; top:0; z-index:10;
+    }
+    .logo img { height:40px }
+    .nav-links { list-style:none }
+    .nav-links li { display:inline-block; margin-left:1rem }
+    .nav-link {
+      color:#fff; text-decoration:none; padding:0.5rem 1rem; border-radius:4px;
+      transition:opacity .3s;
+    }
+    .nav-link:hover { opacity:0.8 }
+    .about-btn {
+      background:#fff !important; color:var(--primary) !important; font-weight:500;
+    }
+    .container { max-width:700px; margin:3rem auto; padding:0 1rem }
+    .section-box {
+      background:#fff; border:1px solid var(--accent);
+      border-radius:8px; padding:2rem; box-shadow:0 2px 6px rgba(0,0,0,0.05);
+      opacity:0; transform:translateY(20px); transition:all .6s ease-out;
+    }
+    .section-box.visible {
+      opacity:1; transform:translateY(0);
+    }
+    h1 { font-size:2rem; margin-bottom:1rem; color:var(--primary) }
+    p { margin-bottom:1rem }
+    footer {
+      text-align:center; padding:2rem 0; background:#fff;
+      color:var(--text); font-size:.9rem; margin-top:4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="Goodie_Bag_Logo.png" alt="Goodie Bag Logo"></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link about-btn">About Me</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="section-box" id="bio-box">
+      <h1>About Me</h1>
+      <p><strong>Bodhin Peterson-Smart</strong> is a senior UX/Product designer about to graduate in May 2025 from CU Boulder…</p>
+      <p>I specialize in mobile experiences, A/B testing, and data-driven design. Outside of school, I…</p>
+      <p><strong>Contact:</strong> <a href="mailto:you@domain.com">you@domain.com</a> • LinkedIn • Portfolio</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Bodhin Peterson-Smart
+  </footer>
+
+  <script>
+    // fade in bio
+    window.addEventListener('load', () => {
+      document.getElementById('bio-box').classList.add('visible');
+    });
+  </script>
+</body>
+</html>
